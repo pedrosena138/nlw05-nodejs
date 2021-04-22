@@ -18,6 +18,7 @@ export default class SettingsController {
       return res.status(201).json(settings);
     } catch (error) {
       console.log(error);
+      throw new Error("Internal server error");
     }
   }
 }

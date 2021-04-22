@@ -8,7 +8,7 @@ import { v4 as uuid } from "uuid";
 import Settings from "@entities/Settings";
 
 @Entity("settings")
-export default class SettingsMock extends Settings {}
+class SettingsMock extends Settings {}
 
 beforeEach(() => {
   return createConnection({
